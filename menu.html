@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chick N' Thaits - Menu</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <a href="index.html" class="logo-container">
+        <img src="images/Logo67.png" alt="Chick N' Thaits Logo">
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="menu.html" class="active">
+            Menu
+        </a>
+
+        <a href="about.html">
+            About Us
+        </a>
+
+        <a href="contact.html">
+            Contact Us
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="menu-section">
+
+    <h1>Our Menu</h1>
+
+    <p class="section-text">
+        Choose from our delicious foods and refreshing drinks.
+    </p>
+
+
+    <h2 class="category-title">
+        Foods
+    </h2>
+
+
+    <div class="product-grid">
+
+
+        <div class="product-card">
+
+            <img
+                src="images/Wing Meal.jpg"
+                alt="Wing Meal"
+                class="product-image"
+            >
+
+
+            <div class="product-info">
+
+                <h3>
+                    Wing Meal
+                </h3>
+
+
+                <p class="description">
+                    4 pieces of crispy chicken wings
+                    with rice and your choice of sauce.
+                </p>
+
+
+                <p class="price">
+                    ₱149
+                </p>
+
+
+                <div class="hidden-info">
+
+                    <p>
+                        🍗 4 Pieces Wings<br>
+                        🍚 Rice<br>
+                        🌶️ Choice of Sauce
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="cart-button"
+                    onclick="addToCart('Wing Meal', 149)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img
+                src="images/Chicken Burger.jpg"
+                alt="Classic Chicken Burger"
+                class="product-image"
+            >
+
+
+            <div class="product-info">
+
+                <h3>
+                    Classic Chicken Burger
+                </h3>
+
+
+                <p class="description">
+                    Crispy chicken that is yummy.
+                </p>
+
+
+                <p class="price">
+                    ₱119
+                </p>
+
+
+                <div class="hidden-info">
+
+                    <p>
+                        Golden, crunchy, and juicy.<br>
+                        Creamy, rich, and full of cheesy goodness.
+                        
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="cart-button"
+                    onclick="addToCart('Classic Chicken Burger', 119)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="product-card">
+    <img src="images/Burger Steak.jpg" alt="Burger Steak" class="product-image">
+
+    <div class="product-info">
+        <h3>Burger Steak</h3>
+        <p class="description">Juicy burger patty topped with rich savory gravy, served with rice.</p>
+        <p class="price">₱129</p>
+
+        <div class="hidden-info">
+            <p>Made with a flavorful beef patty and delicious homemade gravy.</p>
+        </div>
+
+        <button class="cart-button" onclick="addToCart('Burger Steak', 129)">
+            🛒 Add to Cart
+        </button>
+    </div>
+</div>
+
+        <div class="product-card">
+
+            <img
+                src="images/Cheesy Hungarian on Bun.jpg"
+                alt="Cheesy Hungarian on Bun"
+                class="product-image"
+            >
+
+
+            <div class="product-info">
+
+                <h3>
+                    Cheesy Hungarian on Bun
+                </h3>
+
+
+                <p class="description">
+                    Cheesy Hungarian made with our love and cooking.
+                </p>
+
+
+                <p class="price">
+                    ₱89
+                </p>
+
+
+                <div class="hidden-info">
+
+                    <p>
+                         🌭 Juicy Hungarian sausage grilled to perfection<br>
+                         ❤️ A perfect combination of cheesy, savory, and satisfying flavors!
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="cart-button"
+                    onclick="addToCart('Cheesy Hungarian on Bun', 89)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <h2 class="category-title">
+        Drinks
+    </h2>
+
+
+    <div class="product-grid">
+
+
+        <div class="product-card">
+
+            <img
+                src="images/Screenshot 2026-11-09 022138.png"
+                alt="Strawberry Matcha"
+                class="product-image"
+                width="100"
+            >
+
+
+            <div class="product-info">
+
+                <h3>
+                    Strawberry Matcha
+                </h3>
+
+
+                <p class="description">
+                    Taste like nature and sweetness.
+                </p>
+
+
+                <p class="price">
+                    ₱119
+                </p>
+
+
+                <div class="hidden-info">
+
+                    <p>
+                        🍵 Matcha<br>
+                        🥛 Creamy Milk<br>
+                        🍓 Strawberry
+                    </p>
+
+                </div>
+                 <select id="strawberry-size" class="drink-size">
+                 <option value="regular">16 oz – Regular (₱119)</option>
+                 <option value="large">22 oz – Large (₱149)</option>
+                 </select>
+
+
+                <button
+                    class="cart-button"
+                    onclick="addDrinkToCart('Strawberry Matcha', 'strawberry-size', 119, 149)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img
+                src="images/Homemade Coke Float.jpg"
+                alt="Homemade Coke Float"
+                class="product-image"
+            >
+
+
+            <div class="product-info">
+
+                <h3>
+                    Homemade Coke Float
+                </h3>
+
+
+                <p class="description">
+                    Smooth and refreshing Coke Float.
+                </p>
+
+
+                <p class="price">
+                    ₱99
+                </p>
+
+
+                <div class="hidden-info">
+
+                    <p>
+                        🥤 Coke<br>
+                        🍦 Ice Cream<br>
+                        🧊 Served Cold
+                    </p>
+
+                </div>
+                <select id="coke-size" class="drink-size">
+                <option value="regular">16 oz – Regular (₱99)</option>
+                <option value="large">22 oz – Large (₱119)</option>
+                </select>
+
+                <button
+                    class="cart-button"
+                    onclick="addDrinkToCart('Homemade Coke Float', 'coke-size', 99, 119)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img
+                src="images/Iced Coffee.jpg"
+                alt="Iced Coffee"
+                class="product-image"
+            >
+
+
+            <div class="product-info">
+
+                <h3>
+                    Iced Coffee
+                </h3>
+
+
+                <p class="description">
+                    Your next favorite Iced Coffee.
+                </p>
+
+
+                <p class="price">
+                    ₱89
+                </p>
+
+
+                <div class="hidden-info">
+
+                    <p>
+                        ☕ Coffee<br>
+                        🧊 Served Cold
+                    </p>
+
+                </div>
+                <select id="coffee-size" class="drink-size">
+                <option value="regular">16 oz – Regular (₱89)</option>
+                <option value="large">22 oz – Large (₱109)</option>
+                </select>
+
+                <button
+                    class="cart-button"
+                    onclick="addDrinkToCart('Iced Coffee', 'coffee-size', 89, 109)"
+                >
+                    🛒 Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <section class="cart-section">
+
+        <h2>
+            🛒 Your Cart
+        </h2>
+
+
+        <div id="cart-items">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <h3>
+                Total:
+                <span id="cart-total">
+                    ₱0
+                </span>
+            </h3>
+
+        </div>
+
+
+        <button class="clear-button">
+         Clear Cart
+        </button>
+
+    </section>
+
+
+</section>
+
+
+
+<footer>
+
+    <p>
+        © 2026 Chick N' Thaits. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
